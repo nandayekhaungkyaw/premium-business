@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    
+    <main>
+      <!-- nav bar  -->
+       <section class="container mb-[90px]">
+        <!-- ========== HEADER ========== -->
+<header class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full py-7">
+  <nav class="relative  w-full flex flex-wrap  md:grid md:grid-cols-12 basis-full items-center px-4 md:px-8 mx-auto " aria-label="Global">
+    <div class="md:col-span-2">
+      <!-- Logo -->
+      <a class="flex-none rounded-md text-md inline-block font-semibold focus:outline-none focus:opacity-80" href="../templates/creative-agency/index.html" aria-label="Preline">
+        <img class="w-[136px]" src="./img/logo.svg.png"  alt="">
+      
+
+      </a>
+      <!-- End Logo -->
+    </div>
+
+    <!-- Button Group -->
+    <div class="flex flex-row items-center gap-x-2 ms-auto py-1 md:ps-6 md:order-3 xl:col-span-3 md:col-span-10 ">
+      <div class="flex flex-row justify-center items-center gap-2">
+
+        <svg width="23px" height="23px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+
+          <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+          
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+          
+          <g id="SVGRepo_iconCarrier">
+          
+          <path fill="#292929" fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zm0 1.5v13a6.5 6.5 0 100-13z" clip-rule="evenodd"/>
+          
+          </g>
+          
+          </svg>
+
+          <button type="button" class="py-2 px-5 inline-flex  items-center gap-x-2  text-[14px]  text-nowrap  font-medium rounded-md border border-gray-200 text-black hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none">
+            <svg fill="#322f2f" width="16px" height="16px" viewBox="0 0 56.00 56.00" xmlns="http://www.w3.org/2000/svg" stroke="#322f2f" stroke-width="0.00056" transform="rotate(0)">
+
+              <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+              
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+              
+              <g id="SVGRepo_iconCarrier">
+              
+              <path d="M 27.9999 51.9063 C 41.0546 51.9063 51.9063 41.0781 51.9063 28 C 51.9063 14.9453 41.0312 4.0937 27.9765 4.0937 C 14.8983 4.0937 4.0937 14.9453 4.0937 28 C 4.0937 41.0781 14.9218 51.9063 27.9999 51.9063 Z M 27.9999 35.9922 C 20.9452 35.9922 15.5077 38.5 13.1405 41.3125 C 9.9999 37.7968 8.1014 33.1328 8.1014 28 C 8.1014 16.9609 16.9140 8.0781 27.9765 8.0781 C 39.0155 8.0781 47.8983 16.9609 47.9219 28 C 47.9219 33.1563 46.0234 37.8203 42.8593 41.3359 C 40.4921 38.5234 35.0546 35.9922 27.9999 35.9922 Z M 27.9999 32.0078 C 32.4999 32.0547 36.0390 28.2109 36.0390 23.1719 C 36.0390 18.4375 32.4765 14.5 27.9999 14.5 C 23.4999 14.5 19.9140 18.4375 19.9609 23.1719 C 19.9843 28.2109 23.4765 31.9609 27.9999 32.0078 Z"/>
+              
+              </g>
+              
+              </svg> Sign Up
+          </button>
+      </div>
+    
+      <button type="button" class="py-2 px-5 w-[104px]  inline-flex items-center gap-x-2 text-nowrap font-medium rounded-md border border-transparent bg-primary-950 text-black hover:bg-lime-500 transition disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:bg-lime-500">
+       Buy Now!
+      </button>
+
+      <div class="xl:hidden">
+        <button type="button" class="hs-collapse-toggle size-[38px] flex justify-center items-center text-sm font-semibold rounded-md border border-gray-200 text-black hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+          <svg class="hs-collapse-open:hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+          <svg class="hs-collapse-open:block hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <!-- End Button Group -->
+
+    <!-- Collapse -->
+    <div id="navbar-collapse-with-animation" class="hs-collapse xl:inline-block hidden  transition-all duration-300 basis-full grow md:w-auto md:basis-auto md:order-2 md:col-span-7 text-base font-inter">
+      <div class="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row xl:justify-center xl:items-center xl:gap-y-0 xl:gap-x-[16px] xl:mt-0">
+      
+        <div class=" flex flex-row justify-center items-center gap-0 font-inter text-base">
+          <a class="inline-block text-primary-950 hover:text-gray-600" href="#">Demos  </a>
+          <svg width="40px" class="" height="40px" viewBox="-11.52 -11.52 47.04 47.04" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00024000000000000003">
+
+            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+            
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+            
+            <g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#09B850"/> </g>
+            
+            </svg>
+        </div>
+        
+        <div class=" flex flex-row justify-center items-center gap-0 font-inter text-base">
+          <a class="inline-block text-black hover:text-gray-600" href="#">Services  </a>
+          <svg width="40px" class="" height="40px" viewBox="-11.52 -11.52 47.04 47.04" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00024000000000000003">
+
+            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+            
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+            
+            <g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#808080"/> </g>
+            
+            </svg>
+        </div>
+        <div class=" flex flex-row justify-center items-center gap-0 font-inter text-base">
+          <a class="inline-block text-black hover:text-gray-600" href="#">Pages  </a>
+          <svg width="40px" class="" height="40px" viewBox="-11.52 -11.52 47.04 47.04" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00024000000000000003">
+
+            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+            
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+            
+            <g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#808080"/> </g>
+            
+            </svg>
+        </div>
+        <div class=" flex flex-row justify-center items-center gap-0 font-inter text-base">
+          <a class="inline-block text-black hover:text-gray-600" href="#">Portfolio  </a>
+          <svg width="40px" class="" height="40px" viewBox="-11.52 -11.52 47.04 47.04" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00024000000000000003">
+
+            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+            
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+            
+            <g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#808080"/> </g>
+            
+            </svg>
+        </div>
+        <div class=" flex flex-row justify-center items-center gap-0 font-inter text-base">
+          <a class="inline-block text-black hover:text-gray-600" href="#">Megamenu  </a>
+          <svg width="40px" class="" height="40px" viewBox="-11.52 -11.52 47.04 47.04" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00024000000000000003">
+
+            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+            
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+            
+            <g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#808080"/> </g>
+            
+            </svg>
+            <div class=" flex flex-row justify-center items-center gap-0 font-inter text-base">
+              <a class="inline-block text-black hover:text-gray-600  text-nowrap" href="#">Contact us  </a>
+             
+        </div>
+      </div>
+    </div>
+    <!-- End Collapse -->
+  </nav>
+</header>
+<!-- ========== END HEADER ========== -->
+       </section>
+
+      
+       <section class="container ">
+        <img src="./img/Containerbg1 (1).png" class="absolute top-[00px]  z-10" alt="">
+
+        <main class="grid grid-cols-12 gap-4 justify-between items-center ">
+          <div class="col-span-7 flex flex-col gap-[24px]">
+           <div class="font-inter rounded-mdflex flex-row gap-2 bg-slate-100 border-black w-fit px-4 py-1"><span>😎</span><span>Award-winning digital service</span></div>
+
+           <h1 class="font-instrument text-[58px] font-bold" >Creative studio focused on <span id="typeWriter" class="text-primary-950"></span></h1>
+           <h4 class="text-base font-inter">From concept to execution, we deliver web designs that make an impact. Let your brand shine with our innovative and visually stunning websites.</h4>
+           <form class=" px-4 rounded-md w-[80%] py-3 flex flex-row text-base font-inter gap-3 bg-slate-200">
+            <input required   class="w-[80%]  max-w-[523px] focus:outline-none bg-slate-200  " type="email" placeholder="Enter your email address" >
+            <button class="border-2px  text-nowrap border-black border px-4 py-1 text-white bg-slate-800 rounded-md">Buy now</button>
+           </form>
+           <!-- support + award  -->
+            <div class="flex flex-row justify-between">
+              <div class="flex flex-row justify-center items-center gap-[30px]">
+                <img src="./img/Figure → SVG.png"  class="w-[50px]" alt="">
+                <div class="flex flex-col gap[10px]">
+                  <h2 class="font-instrument font-semibold text-[20px]">24/7 Support</h2>
+                  <p>we're always here to help</p>
+                </div>
+              </div>
+              <div class="flex flex-row justify-center items-center gap-[30px]">
+                <img class="w-[50px]" src="./img/Figure → SVG (1).png" alt="">
+                <div class="flex flex-col gap[10px]">
+                  <h2 class="font-instrument font-semibold text-[20px]">Award-winning</h2>
+                  <p>You are in safe hand</p>
+                </div>
+              </div>
+              
+            </div>
+
+
+          </div>
+          <!-- img hero container  -->
+         
+          <div class="col-span-5 items-end flex justify-end">
+            <img class="max-w-[641px] relative left-24 bottom-4" src="./img/Group 2.png" alt="">
+
+          </div>
+          <div class="grid grid-cols-12 col-span-12 h-[200px]">
+            <div class="col-span-2">
+              <h2 class="font-instrument font-bold text-[20px] text-wrap w-2/3">100 + companies trust us</h2>
+            </div>
+            <div class="col-span-10">
+              <!-- Slider main container -->
+<div class="swiper h-full w-full  ">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper" >
+    <!-- Slides -->
+    <div class="swiper-slide"><img class="w-[149px]" src="./img/1.png" alt=""></div>
+    <div class="swiper-slide"><img  class="w-[149px]"  src="./img/2.png" alt=""></div>
+    <div class="swiper-slide"><img class="w-[149px]"  src="./img/3.png" alt=""></div>
+
+    <div class="swiper-slide"><img  class="w-[149px]" src="./img/4.png" alt=""></div>
+    <div class="swiper-slide"><img  class="w-[149px]" src="./img/5.png" alt=""></div>
+    <div class="swiper-slide"><img  class="w-[149px]" src="./img/1.png" alt=""></div>
+    <div class="swiper-slide"><img  class="w-[149px]" src="./img/2.png" alt=""></div>
+    <div class="swiper-slide"><img  class="w-[149px]" src="./img/3.png" alt=""></div>
+
+    <div class="swiper-slide"><img  class="w-[149px]" src="./img/4.png" alt=""></div>
+    <div class="swiper-slide"><img class="w-[149px]"  src="./img/5.png" alt=""></div>
+   
+    ...
+  </div>
+  
+</div>
+            </div>
+          </div>
+
+        </main>
+
+        
+       </section>
+     
+    </main>
+    <!-- experience  -->
+    <main class="container grid grid-cols-12 justify-center items-center mt-[80px]">
+
+      <section class="col-span-7 grid grid-cols-7  gap-[20px] overflow-hidden">
+        <img src="./img/first-img.png" class="col-span-3 max-h-[467px] transition-all duration-300 hover:scale-110" alt="">
+        <div class="col-span-4 w-3/4 grid grid-cols-4 gap-[30px] overflow-hidden">
+
+          <div class="col-span-2">
+            <h2 class="text-[44px]  justify-center flex flex-col py-[16px]  content-center border  border-black text-wrap text-center px-3  font-instrument rounded-md bg-slate-800 text-white">10+ <span class="text-base font-inter"> Years of 
+              
+             
+            </span> <span class="text-base font-inter">  
+              Experience
+             
+            </span></h2>
+          </div>
+          <div class="col-span-2">
+            <h2 class="text-[44px] justify-center flex flex-col  content-center border py-[16px]  border-black text-wrap text-center px-3  font-instrument rounded-md bg-primary-950 text-white"><span>1.2K</span> <span class="text-base font-inter "> Happy
+              
+             
+            </span> <span class="text-base font-inter ">  
+              Customers
+             
+            </span></h2>
+          </div>
+          <img src="./img/sec-img.png" class="col-span-4 max-h-[530px] w-full transition-all duration-300 hover:scale-110" alt="">
+
+        </div>
+      </section>
+      <section class="col-span-5 flex flex-col ">
+        <div class="font-inter  rounded-md flex flex-row gap-[8px] justify-center items-center bg-slate-100 border-black w-fit px-4 py-1"> 
+
+           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#d54515" viewBox="0 0 256 256"><path d="M230.33,141.06a24.34,24.34,0,0,0-18.61-4.77C230.5,117.33,240,98.48,240,80c0-26.47-21.29-48-47.46-48A47.58,47.58,0,0,0,156,48.75,47.58,47.58,0,0,0,119.46,32C93.29,32,72,53.53,72,80c0,11,3.24,21.69,10.06,33a31.87,31.87,0,0,0-14.75,8.4L44.69,144H16A16,16,0,0,0,0,160v40a16,16,0,0,0,16,16H120a7.93,7.93,0,0,0,1.94-.24l64-16a6.94,6.94,0,0,0,1.19-.4L226,182.82l.44-.2a24.6,24.6,0,0,0,3.93-41.56ZM119.46,48A31.15,31.15,0,0,1,148.6,67a8,8,0,0,0,14.8,0,31.15,31.15,0,0,1,29.14-19C209.59,48,224,62.65,224,80c0,19.51-15.79,41.58-45.66,63.9l-11.09,2.55A28,28,0,0,0,140,112H100.68C92.05,100.36,88,90.12,88,80,88,62.65,102.41,48,119.46,48ZM16,160H40v40H16Zm203.43,8.21-38,16.18L119,200H56V155.31l22.63-22.62A15.86,15.86,0,0,1,89.94,128H140a12,12,0,0,1,0,24H112a8,8,0,0,0,0,16h32a8.32,8.32,0,0,0,1.79-.2l67-15.41.31-.08a8.6,8.6,0,0,1,6.3,15.9Z"></path></svg>      <span>Award-winning digital service</span>
+          </div>
+
+          <h2 class="font-instrument text-[44px] leading-[55px]  mt-[26px] font-bold">Defining the future of online experiences! </h2>
+
+          <p class="text-base font-inter mt-[26px]">Embrace a new era of digital success with Mizzle. Our team combines cutting-edge design with robust development to deliver websites that captivate and convert.</p>
+
+         <ul class="flex flex-col gap-[12px] mt-[16px] ">
+          <li class="text-base font-inter flex flex-row gap-3  items-center"> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#09B850" viewBox="0 0 256 256"><path d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82Zm-11.55,39.29c-4.79,5-9.75,10.17-12.38,16.52-2.52,6.1-2.63,13.07-2.73,19.82-.1,7-.21,14.33-3.32,17.43s-10.39,3.22-17.43,3.32c-6.75.1-13.72.21-19.82,2.73-6.35,2.63-11.52,7.59-16.52,12.38S132,224,128,224s-9.15-4.92-14.11-9.69-10.17-9.75-16.52-12.38c-6.1-2.52-13.07-2.63-19.82-2.73-7-.1-14.33-.21-17.43-3.32s-3.22-10.39-3.32-17.43c-.1-6.75-.21-13.72-2.73-19.82-2.63-6.35-7.59-11.52-12.38-16.52S32,132,32,128s4.92-9.15,9.69-14.11,9.75-10.17,12.38-16.52c2.52-6.1,2.63-13.07,2.73-19.82.1-7,.21-14.33,3.32-17.43S70.51,56.9,77.55,56.8c6.75-.1,13.72-.21,19.82-2.73,6.35-2.63,11.52-7.59,16.52-12.38S124,32,128,32s9.15,4.92,14.11,9.69,10.17,9.75,16.52,12.38c6.1,2.52,13.07,2.63,19.82,2.73,7,.1,14.33.21,17.43,3.32s3.22,10.39,3.32,17.43c.1,6.75.21,13.72,2.73,19.82,2.63,6.35,7.59,11.52,12.38,16.52S224,124,224,128,219.08,137.15,214.31,142.11ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z"></path>
+            </svg> 
+            <span>Emphasis on ROI-driven solutions</span></li>
+
+            <li class="text-base font-inter flex flex-row gap-3  items-center"> 
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#09B850" viewBox="0 0 256 256"><path d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82Zm-11.55,39.29c-4.79,5-9.75,10.17-12.38,16.52-2.52,6.1-2.63,13.07-2.73,19.82-.1,7-.21,14.33-3.32,17.43s-10.39,3.22-17.43,3.32c-6.75.1-13.72.21-19.82,2.73-6.35,2.63-11.52,7.59-16.52,12.38S132,224,128,224s-9.15-4.92-14.11-9.69-10.17-9.75-16.52-12.38c-6.1-2.52-13.07-2.63-19.82-2.73-7-.1-14.33-.21-17.43-3.32s-3.22-10.39-3.32-17.43c-.1-6.75-.21-13.72-2.73-19.82-2.63-6.35-7.59-11.52-12.38-16.52S32,132,32,128s4.92-9.15,9.69-14.11,9.75-10.17,12.38-16.52c2.52-6.1,2.63-13.07,2.73-19.82.1-7,.21-14.33,3.32-17.43S70.51,56.9,77.55,56.8c6.75-.1,13.72-.21,19.82-2.73,6.35-2.63,11.52-7.59,16.52-12.38S124,32,128,32s9.15,4.92,14.11,9.69,10.17,9.75,16.52,12.38c6.1,2.52,13.07,2.63,19.82,2.73,7,.1,14.33.21,17.43,3.32s3.22,10.39,3.32,17.43c.1,6.75.21,13.72,2.73,19.82,2.63,6.35,7.59,11.52,12.38,16.52S224,124,224,128,219.08,137.15,214.31,142.11ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z"></path>
+              </svg> 
+              <span>Emphasis on ROI-driven solutions</span></li>
+
+              <li class="text-base font-inter flex flex-row gap-3  items-center"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#09B850" viewBox="0 0 256 256"><path d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82Zm-11.55,39.29c-4.79,5-9.75,10.17-12.38,16.52-2.52,6.1-2.63,13.07-2.73,19.82-.1,7-.21,14.33-3.32,17.43s-10.39,3.22-17.43,3.32c-6.75.1-13.72.21-19.82,2.73-6.35,2.63-11.52,7.59-16.52,12.38S132,224,128,224s-9.15-4.92-14.11-9.69-10.17-9.75-16.52-12.38c-6.1-2.52-13.07-2.63-19.82-2.73-7-.1-14.33-.21-17.43-3.32s-3.22-10.39-3.32-17.43c-.1-6.75-.21-13.72-2.73-19.82-2.63-6.35-7.59-11.52-12.38-16.52S32,132,32,128s4.92-9.15,9.69-14.11,9.75-10.17,12.38-16.52c2.52-6.1,2.63-13.07,2.73-19.82.1-7,.21-14.33,3.32-17.43S70.51,56.9,77.55,56.8c6.75-.1,13.72-.21,19.82-2.73,6.35-2.63,11.52-7.59,16.52-12.38S124,32,128,32s9.15,4.92,14.11,9.69,10.17,9.75,16.52,12.38c6.1,2.52,13.07,2.63,19.82,2.73,7,.1,14.33.21,17.43,3.32s3.22,10.39,3.32,17.43c.1,6.75.21,13.72,2.73,19.82,2.63,6.35,7.59,11.52,12.38,16.52S224,124,224,128,219.08,137.15,214.31,142.11ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z"></path>
+                </svg> 
+                <span>Emphasis on ROI-driven solutions</span></li>
+         </ul>
+
+         <button class="border border-solid w-fit py-1 mt-[16px] bg-primary-950 rounded-md px-6 text-base font-inter border-black">Discover more</button>
+
+
+      </section>
+
+    </main>
+
+    <!-- service  -->
+     <main class="w-full bg-primary-850 mt-[120px] pb-[20px] pt-[10px]">
+      <section class="container ">
+        <div class="font-inter mx-auto  rounded-md flex flex-row gap-[8px] justify-center items-center bg-slate-800 text-white border-black w-fit px-4 py-1"> 
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ec1818" viewBox="0 0 256 256"><path d="M223.85,47.12a16,16,0,0,0-15-15c-12.58-.75-44.73.4-71.41,27.07L132.69,64H74.36A15.91,15.91,0,0,0,63,68.68L28.7,103a16,16,0,0,0,9.07,27.16l38.47,5.37,44.21,44.21,5.37,38.49a15.94,15.94,0,0,0,10.78,12.92,16.11,16.11,0,0,0,5.1.83A15.91,15.91,0,0,0,153,227.3L187.32,193A15.91,15.91,0,0,0,192,181.64V123.31l4.77-4.77C223.45,91.86,224.6,59.71,223.85,47.12ZM74.36,80h42.33L77.16,119.52,40,114.34Zm74.41-9.45a76.65,76.65,0,0,1,59.11-22.47,76.46,76.46,0,0,1-22.42,59.16L128,164.68,91.32,128ZM176,181.64,141.67,216l-5.19-37.17L176,139.31Zm-74.16,9.5C97.34,201,82.29,224,40,224a8,8,0,0,1-8-8c0-42.29,23-57.34,32.86-61.85a8,8,0,0,1,6.64,14.56c-6.43,2.93-20.62,12.36-23.12,38.91,26.55-2.5,36-16.69,38.91-23.12a8,8,0,1,1,14.56,6.64Z"></path></svg>    <span>Award-winning digital service</span>
+         </div>
+         <h2 class="text-white mx-auto mt-[30px] text-center text-[44px] font-instrument text-wrap max-w-[686px] ">We specialize in the following services</h2>
+
+         <!-- card group  -->
+          <div class="flex flex-col gap-[50px] text-white mt-[50px]">
+            <section class="grid grid-cols-4 gap-[22px]">
+              <div class="bg-primary-750 px-4 min-h-[230px] py-2 rounded-md content-center">
+                <img src="./img/Group 6eee.png" class="size-[60px] relative bottom-10" alt="">
+                <h1 class="text-[24px] font-instrument font-semibold">Digital Marketing</h1>
+                <p class="text-base font-inter mt-[20px]">Growing brands online through digital channels.
+                </p>
+                <a href="" class="text-primary-950  mt-[20px] flex flex-row gap-[8px] items-center hover:gap-[16px] duration-300 hover:text-green-600"><span>Know more</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#18ec31" viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path></svg>  
+                </a>
+              </div>
+              <div class="bg-primary-750 px-4 min-h-[230px] py-2 rounded-md content-center">
+                <img src="./img/Group 622.png" class="size-[60px] relative bottom-10" alt="">
+                <h1 class="text-[24px] font-instrument font-semibold">Product Design</h1>
+                <p class="text-base font-inter mt-[20px]">Creating products that users love and businesses need .
+                </p>
+                <a href="" class="text-primary-950  mt-[20px] flex flex-row gap-[8px] items-center hover:gap-[16px] duration-300 hover:text-green-600"><span>Know more</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#18ec31" viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path></svg>  
+                </a>
+              </div>
+              <div class="bg-primary-750 px-4 min-h-[230px] py-2 rounded-md content-center">
+                <img src="./img/Group 633.png" class="size-[60px] relative bottom-10" alt="">
+                <h1 class="text-[24px] font-instrument font-semibold">Web Design</h1>
+                <p class="text-base font-inter mt-[20px]">Designing websites that are visually appealing & user-friendly.
+
+
+                </p>
+                <a href="" class="text-primary-950  mt-[20px] flex flex-row gap-[8px] items-center hover:gap-[16px] duration-300 hover:text-green-600"><span>Know more</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#18ec31" viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path></svg>  
+                </a>
+              </div>
+              <div class="bg-primary-750 px-4 min-h-[230px] py-2 rounded-md content-center">
+                <img src="./img/Group 644.png" class="size-[60px] relative bottom-10" alt="">
+                <h1 class="text-[24px] font-instrument font-semibold">UI/UX Design</h1>
+                <p class="text-base font-inter mt-[20px]">Creating user interfaces that are both efficient and enjoyable.
+                </p>
+                <a href="" class="text-primary-950  mt-[20px] flex flex-row gap-[8px] items-center hover:gap-[16px] duration-300 hover:text-green-600"><span>Know more</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#18ec31" viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path></svg>  
+                </a>
+              </div>
+
+            </section>
+            <section class="grid grid-cols-4 gap-[22px]">
+              <div class="bg-primary-750 px-4 min-h-[230px] py-2 rounded-md content-center">
+                <img src="./img/Group 655.png" class="size-[60px] relative bottom-10" alt="">
+                <h1 class="text-[24px] font-instrument font-semibold">Business Strategy</h1>
+                <p class="text-base font-inter mt-[20px]">Developing and executing plans to achieve business goals.
+                </p>
+                <a href="" class="text-primary-950  mt-[20px] flex flex-row gap-[8px] items-center hover:gap-[16px] duration-300 hover:text-green-600"><span>Know more</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#18ec31" viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path></svg>  
+                </a>
+              </div>
+              <div class="bg-primary-750 px-4 min-h-[230px] py-2 rounded-md content-center">
+                <img src="./img/Group 666.png" class="size-[60px] relative bottom-10" alt="">
+                <h1 class="text-[24px] font-instrument font-semibold">Research</h1>
+                <p class="text-base font-inter mt-[20px]">Gathering and analyzing data to inform decision-making.
+
+
+                </p>
+                <a href="" class="text-primary-950  mt-[20px] flex flex-row gap-[8px] items-center hover:gap-[16px] duration-300 hover:text-green-600"><span>Know more</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#18ec31" viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path></svg>  
+                </a>
+              </div>
+              <div class="bg-primary-750 px-4 min-h-[230px] py-2 rounded-md content-center">
+                <img src="./img/Group 677.png" class="size-[60px] relative bottom-10" alt="">
+                <h1 class="text-[24px] font-instrument font-semibold">Web Development</h1>
+                <p class="text-base font-inter mt-[20px]">Building and maintaining websites and web applications.
+                </p>
+                <a href="" class="text-primary-950  mt-[20px] flex flex-row gap-[8px] items-center hover:gap-[16px] duration-300 hover:text-green-600"><span>Know more</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#18ec31" viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path></svg>  
+                </a>
+              </div>
+              <div class="bg-primary-750 px-4 min-h-[230px] py-2 rounded-md content-center">
+                <img src="./img/Group 688.png" class="size-[60px] relative bottom-10" alt="">
+                <h1 class="text-[24px] font-instrument font-semibold">Brand Design</h1>
+                <p class="text-base font-inter mt-[20px]">Creating brands that are unique, memorable, and meaningful.
+
+
+                </p>
+                <a href="" class="text-primary-950  mt-[20px] flex flex-row gap-[8px] items-center hover:gap-[16px] duration-300 hover:text-green-600"><span>Know more</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#18ec31" viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path></svg>  
+                </a>
+              </div>
+
+            </section>
+           
+
+          </div>
+
+
+
+
+      </section>
+
+
+      
+     </main>
+
+     
+          <!-- pricing  -->
+
+          <section class="mt-[120px] container flex flex-col gap-[26px]">
+            <div class="font-inter mx-auto  rounded-md flex flex-row gap-[8px] justify-center items-center bg-slate-800 text-white border-black w-fit px-4 py-1"> 
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ec1818" viewBox="0 0 256 256"><path d="M223.85,47.12a16,16,0,0,0-15-15c-12.58-.75-44.73.4-71.41,27.07L132.69,64H74.36A15.91,15.91,0,0,0,63,68.68L28.7,103a16,16,0,0,0,9.07,27.16l38.47,5.37,44.21,44.21,5.37,38.49a15.94,15.94,0,0,0,10.78,12.92,16.11,16.11,0,0,0,5.1.83A15.91,15.91,0,0,0,153,227.3L187.32,193A15.91,15.91,0,0,0,192,181.64V123.31l4.77-4.77C223.45,91.86,224.6,59.71,223.85,47.12ZM74.36,80h42.33L77.16,119.52,40,114.34Zm74.41-9.45a76.65,76.65,0,0,1,59.11-22.47,76.46,76.46,0,0,1-22.42,59.16L128,164.68,91.32,128ZM176,181.64,141.67,216l-5.19-37.17L176,139.31Zm-74.16,9.5C97.34,201,82.29,224,40,224a8,8,0,0,1-8-8c0-42.29,23-57.34,32.86-61.85a8,8,0,0,1,6.64,14.56c-6.43,2.93-20.62,12.36-23.12,38.91,26.55-2.5,36-16.69,38.91-23.12a8,8,0,1,1,14.56,6.64Z"></path></svg>    <span>Award-winning digital service</span>
+             </div>
+             <h2 class="font-instrument text-[44px] font-bold text-center">Get a plan that grows with you</h2>
+
+             <div class="grid grid-cols-3 gap-8">
+
+              <div class="border-r-2  border-slate-100 flex flex-col gap-[16px]">
+                <img src="./img/SVG (3).png" class="w-[126px]" alt="">
+                <button class="border px-6 py-1 border-black w-fit bg-primary-850 text-white rounded-md">Boss mode</button>
+                <h2> <span class="text-[88px] font-instrument font-bold"> $59</span > <span class="text-[24px] font-inter font-semibold">/month</span></h2>
+                <p class=" text-base font-inter">The all-in-one solution for businesses that want to succeed online.                </p>
+
+              </div>
+              <div>
+                <h2 class="text-[20px] font-semibold mb-[27px]">Features list of your need</h2>
+
+                <div  class="flex flex-col gap-[14px]">
+                    <div class="flex flex-row gap-[4px] items-center"><svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                    
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                    
+                    <g id="SVGRepo_iconCarrier"> <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke="#45ed07" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g>
+                    
+                      </svg><span>Up to 05 users monthly</span>
+                    </div>
+                    <div class="flex flex-row gap-[4px] items-center"><svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                      
+                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                      
+                      <g id="SVGRepo_iconCarrier"> <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke="#45ed07" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g>
+                      
+                      </svg><span>Up to 05 users monthly</span></div>
+                      <div class="flex flex-row gap-[4px] items-center"><svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        
+                        <g id="SVGRepo_iconCarrier"> <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke="#45ed07" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g>
+                        
+                        </svg><span>Up to 05 users monthly</span></div>
+                        <div class="flex flex-row gap-[4px] items-center"><svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                          
+                          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                          
+                          <g id="SVGRepo_iconCarrier"> <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke="#45ed07" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g>
+                          
+                          </svg><span>Up to 05 users monthly</span></div>
+                          <div class="flex flex-row gap-[4px] items-center"><svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                            
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                            
+                            <g id="SVGRepo_iconCarrier"> <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke="#45ed07" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g>
+                            
+                            </svg><span>Up to 05 users monthly</span></div>
+                            <div class="flex flex-row gap-[4px] items-center"><svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+                              <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                              
+                              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                              
+                              <g id="SVGRepo_iconCarrier"> <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke="#45ed07" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g>
+                              
+                              </svg><span>Up to 05 users monthly</span></div>
+
+
+                </div>
+                <button class="mt-[27px] text-base px-6 py-1 bg-primary-850 text-white rounded-md">Start a free 7-day trial</button>
+
+                <h2 class="text-base text-primary-750 mt-[16px]" >No credit card is required</h2>
+
+             
+              </div>
+
+              <div class="border border-black  rounded-md px-[16px] py-[16px] bg-primary-950 flex flex-col justify-between"> 
+                <section class="space-y-[16px]">
+                  <button class="border border-black px-4 py-1 bg-black text-white">Enterprise</button>
+                  <h2 class="text-[32px] font-instrument font-bold text-white">Custom pricing plan</h2>
+
+                </section>
+
+                <section class="space-y-[16px]">
+
+                  <button class="border w-full py-1 bg-white rounded-md hover:scale-110 duration-300">Contact Sales</button>
+                  <h2 class="text-white text-center">Get personalized demo and custom plan
+                  </h2>
+                </section>
+              
+
+              </div>
+
+             </div>
+
+
+          </section>
+
+          <section class="mt-[120px] container grid grid-cols-2 " >
+            <div class=" flex flex-col gap-[26px]">
+              <div class="font-inter mx-auto  rounded-md flex flex-row gap-[8px] justify-center items-center bg-slate-800 text-white border-black w-fit px-4 py-1"> 
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ec1818" viewBox="0 0 256 256"><path d="M223.85,47.12a16,16,0,0,0-15-15c-12.58-.75-44.73.4-71.41,27.07L132.69,64H74.36A15.91,15.91,0,0,0,63,68.68L28.7,103a16,16,0,0,0,9.07,27.16l38.47,5.37,44.21,44.21,5.37,38.49a15.94,15.94,0,0,0,10.78,12.92,16.11,16.11,0,0,0,5.1.83A15.91,15.91,0,0,0,153,227.3L187.32,193A15.91,15.91,0,0,0,192,181.64V123.31l4.77-4.77C223.45,91.86,224.6,59.71,223.85,47.12ZM74.36,80h42.33L77.16,119.52,40,114.34Zm74.41-9.45a76.65,76.65,0,0,1,59.11-22.47,76.46,76.46,0,0,1-22.42,59.16L128,164.68,91.32,128ZM176,181.64,141.67,216l-5.19-37.17L176,139.31Zm-74.16,9.5C97.34,201,82.29,224,40,224a8,8,0,0,1-8-8c0-42.29,23-57.34,32.86-61.85a8,8,0,0,1,6.64,14.56c-6.43,2.93-20.62,12.36-23.12,38.91,26.55-2.5,36-16.69,38.91-23.12a8,8,0,1,1,14.56,6.64Z"></path></svg>    <span>Award-winning digital service</span>
+               </div>
+               <h2 class="text-[44px] font-instrument font-bold leading-[50px]  ">See how we've helped our clients succeed</h2>
+
+               <p class="font-instrument text-[20px] font-semibold">More than 1500+ agencies using Mizzle
+              </p>
+
+              <section class=" gap-[16px']">
+                <div class="swiper2 h-[182px] overflow-hidden">
+                  <!-- Additional required wrapper -->
+                  <main class="swiper-wrapper col-span-2">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <div class="flex flex-col gap-[16px]">
+                        <section class="flex flex-row gap-[4px]">
+                          <img src="./img/Symbol.png" alt="">
+                          <img src="./img/Symbol.png" alt="">
+                          <img src="./img/Symbol.png" alt="">
+                          <img src="./img/Symbol.png" alt="">
+                          <img src="./img/Symbol (1).png" alt="">
+                        </section>
+                        <p>I highly recommend Mixxle to anyone looking for a high quality Bootstrap theme</p>
+                        <div class="flex flex-row gap-[4px] items-center">
+                          <img src="./img/4c234696c74a1039070a9c3cbb66a31d 1 (1).png" alt="">
+                          <p class="text-base">By Carolyn Ortiz</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="flex flex-col gap-[16px]">
+                        <section class="flex flex-row gap-[4px]">
+                          <img src="./img/Symbol.png" alt="">
+                          <img src="./img/Symbol.png" alt="">
+                          <img src="./img/Symbol.png" alt="">
+                          <img src="./img/Symbol.png" alt="">
+                          <img src="./img/Symbol (1).png" alt="">
+                        </section>
+                        <p>I highly recommend Mixxle to anyone looking for a high quality Bootstrap theme</p>
+                        <div class="flex flex-row gap-[4px] items-center">
+                          <img src="./img/4c234696c74a1039070a9c3cbb66a31d 1 (2).png" alt="">
+                          <p class="text-base">By Carolyn Ortiz</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="flex flex-col gap-[16px]">
+                        <section class="flex flex-row gap-[4px]">
+                          <img src="./img/Symbol.png" alt="">
+                          <img src="./img/Symbol.png" alt="">
+                          <img src="./img/Symbol.png" alt="">
+                          <img src="./img/Symbol.png" alt="">
+                          <img src="./img/Symbol (1).png" alt="">
+                        </section>
+                        <p>I highly recommend Mixxle to anyone looking for a high quality Bootstrap theme</p>
+                        <div class="flex flex-row gap-[4px] items-center">
+                          <img src="./img/4c234696c74a1039070a9c3cbb66a31d 1 (1).png" alt="">
+                          <p class="text-base">By Carolyn Ortiz</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="flex flex-col gap-[16px]">
+                        <section class="flex flex-row gap-[4px]">
+                          <img src="./img/Symbol.png" alt="">
+                          <img src="./img/Symbol.png" alt="">
+                          <img src="./img/Symbol.png" alt="">
+                          <img src="./img/Symbol.png" alt="">
+                          <img src="./img/Symbol (1).png" alt="">
+                        </section>
+                        <p>I highly recommend Mixxle to anyone looking for a high quality Bootstrap theme</p>
+                        <div class="flex flex-row gap-[4px] items-center">
+                          <img src="./img/4c234696c74a1039070a9c3cbb66a31d 1 (2).png" alt="">
+                          <p class="text-base">By Carolyn Ortiz</p>
+                        </div>
+                      </div>
+                    </div>
+                  </main>
+                  <!-- Add Pagination -->
+                
+                </div>
+           
+
+                
+
+
+
+              </section>
+          
+            
+              
+            </div>
+
+            <img src="./img/Group 11.png" class="w-full" alt="">
+            
+
+
+          </section>
+
+          <section class="mt-[120px] container grid grid-cols-3 gap-[80px] bg-primary-950 px-[20px] py-[20px] justify-center items-center h-[272px] relative top-[26px]" >
+         
+            <div class="col-span-2 space-y-[27px] ">
+              <h2 class="text-[40px] max-w-[628px] leading-[50px] font-instrument text-white font-bold">Let's talk about your digital agency goals</h2>
+
+              <form action="" class="flex flex-row gap-[16px] border border-solid bg-white px-6 py-2 justify-between w-3/4 rounded-md">
+                <input type="email" class="w-full focus:outline-none "  placeholder="Your email address" required>
+                <button class=" px-4 py-1 bg-black text-white"> Subscribe</button>
+              </form>
+            </div>
+            <div class=" px-2 space-y-[16px]">
+             <span class="flex flex-row gap-[16px]"><img class="w-[16px]" src="./img/headphone-part-2-svgrepo-com.svg" alt="">   <p class="text-base text-white">Call on:012657489754 </p></span> 
+
+             <span class="flex flex-row gap-[16px]"><img class="w-[16px]" src="./img/clock-circle-svgrepo-com.svg" alt="">   <p class="text-base text-white">Time: 9am to 5pm (Sunday close) </p></span> 
+             <span class="flex flex-row gap-[16px]"><img class="w-[16px]" src="./img/email-download-svgrepo-com.svg" alt="">   <p class="text-base text-white">Email:example@gmail.com </p></span> 
+             <img src="./img/SVG (4).png" class="relative bottom-20" alt="">
+              
+
+
+
+            </div>
+
+          </section>
+
+          <section class="bg-primary-850 text-white w-full pt-[80px] content-center items-center  ">
+
+            <img src="./img/Containerbg1 (1).png" class="absolute  z-10" alt="">
+            <main class="container  grid grid-cols-4 gap-[26px]  mx-auto">
+
+              <div class="  flex flex-col gap-[16px]   ">
+                <img src="./img/logo.svg fill.png" alt="" class="text-white w-[136px]">
+                <h2 class="text-base font-inter">A Bootstrap theme that's both stylish and functional, perfect for any type of technology or corporate website.
+                </h2>
+              </div>
+              <div class=" flex flex-col gap-[26px]">  
+                <h2 class="font-instrument font-semibold text-[20px]">Quick links</h2>
+                <ul class="flex flex-col gap-[12px] ">
+                  <a href="" class="text-primary-750 text-base hover:text-primary-950">About us</a>
+                  <a href="" class="text-primary-750 text-base  hover:text-primary-950">Contact us</a>
+                 
+                  <a href="" class="font-inter text-primary-750   flex flex-row gap-[4px]"><span class=" hover:text-primary-950">Career</span> <button class="text-[12px] bg-red-500 px-4 rounded-sm">2 job </button></a>
+                  <a href="" class="text-primary-750 text-base  hover:text-primary-950">Career detail </a>
+                  <a href="" class="text-primary-750 text-base  hover:text-primary-950">Become a partner  </a>
+                  <a href="" class="text-primary-750 text-base  hover:text-primary-950">Sign in </a>
+
+                  <a href="" class="text-primary-750 text-base  hover:text-primary-950">Sign up </a>
+
+
+
+                </ul>
+              </div>
+              <div class=" flex flex-col gap-[26px]">  
+                <h2 class="font-instrument font-semibold text-[20px]">Community</h2>
+                <ul class="flex flex-col gap-[12px] ">
+                  <a href="" class="text-primary-750 text-base  hover:text-primary-950">Documents</a>
+                 
+                 
+                  <a href="" class="font-inter text-primary-750 flex flex-row gap-[4px]"><span class=" hover:text-primary-950">support</span> <button class="text-[12px]"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#c4c5c6" viewBox="0 0 256 256"><path d="M224,104a8,8,0,0,1-16,0V59.32l-66.33,66.34a8,8,0,0,1-11.32-11.32L196.68,48H152a8,8,0,0,1,0-16h64a8,8,0,0,1,8,8Zm-40,24a8,8,0,0,0-8,8v72H48V80h72a8,8,0,0,0,0-16H48A16,16,0,0,0,32,80V208a16,16,0,0,0,16,16H176a16,16,0,0,0,16-16V136A8,8,0,0,0,184,128Z"></path></svg> </button></a>
+                  <a href="" class="text-primary-750 text-base  hover:text-primary-950">Faqus </a>
+                  <a href="" class="text-primary-750 text-base  hover:text-primary-950">Privacy Poacy  </a>
+                  <a href="" class="text-primary-750 text-base  hover:text-primary-950">News and blogs </a>
+
+                  <a href="" class="text-primary-750 text-base  hover:text-primary-950">Terms and condition </a>
+
+
+
+                </ul>
+              </div>
+              <div class=" flex flex-col gap-[16px] ">  
+                <h2 class="font-instrument font-semibold text-[20px]">App available on</h2>
+               <div class="flex flex-row gap-7">
+                <img src="./img/Container.png" alt="">
+                <img src="./img/Link.png" alt="">
+               </div>
+
+               <h2 class="font-instrument font-semibold text-[20px] mt-[20px]">Follow on</h2>
+
+               <div class="grid grid-cols-5 ">
+                <img src="./img/Container-1.png" class="hover:scale-150 duration-300"  alt="">
+                <img src="./img/Container-2.png" class="hover:scale-150 duration-300" alt="">
+                <img src="./img/Container-3.png" class="hover:scale-150 duration-300" alt="">
+                <img src="./img/Container-4.png" class="hover:scale-150 duration-300" alt="">
+                <img src="./img/Container-5.png" class="hover:scale-150 duration-300" alt="">
+
+               </div>
+
+
+
+
+                </ul>
+              </div>
+
+
+            </main>
+            <div class="flex flex-row justify-between items-center container pt-[26px] border-t-2 border-primary-750 mt-[26px] mb-[26px]">
+              <p class="text-base font-inter text-primary-750">Copyrights ©2024 Mizzle. Build by Webestica .</p>
+             
+
+                <button class="text-[14px] flex flex-row gap-[8px] justify-center hover:bg-slate-400 duration-300 items-center bg-primary-750 px-4 py-1 rounded-md ">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" viewBox="0 0 256 256"><path d="M128,24h0A104,104,0,1,0,232,128,104.12,104.12,0,0,0,128,24Zm87.62,96H175.79C174,83.49,159.94,57.67,148.41,42.4A88.19,88.19,0,0,1,215.63,120ZM96.23,136h63.54c-2.31,41.61-22.23,67.11-31.77,77C118.45,203.1,98.54,177.6,96.23,136Zm0-16C98.54,78.39,118.46,52.89,128,43c9.55,9.93,29.46,35.43,31.77,77Zm11.36-77.6C96.06,57.67,82,83.49,80.21,120H40.37A88.19,88.19,0,0,1,107.59,42.4ZM40.37,136H80.21c1.82,36.51,15.85,62.33,27.38,77.6A88.19,88.19,0,0,1,40.37,136Zm108,77.6c11.53-15.27,25.56-41.09,27.38-77.6h39.84A88.19,88.19,0,0,1,148.41,213.6Z"></path></svg> 
+                  <span>Languages</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" viewBox="0 0 256 256"><path d="M213.66,165.66a8,8,0,0,1-11.32,0L128,91.31,53.66,165.66a8,8,0,0,1-11.32-11.32l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,213.66,165.66Z"></path></svg></button>
+              </button>
+            </div>
+
+          </section>
+  
+    
+  </body>
+<script type="module" src="./main.js"></script>
+</html>
