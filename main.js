@@ -18,12 +18,24 @@ new Typewriter('#typeWriter', {
 
 const swiper2 = new Swiper('.swiper2', {
   // Optional parameters
-  slidesPerView:2,
+  slidesPerView:1,
     spaceBetween:30,
   direction: 'horizontal',
   loop: true,
+
+    breakpoints: {
+      // when window width is <= 640px
+      780: {
+        slidesPerView: 2,  // Adjust to 1 slide per view on phones
+      },
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },},
+
+
   autoplay: {
-    delay: 1000,
+    delay: 2000,
     disableOnInteraction: false,
   },
 
@@ -43,11 +55,19 @@ const swiper2 = new Swiper('.swiper2', {
 });
 
 const swiper = new Swiper('.swiper', {
-    slidesPerView:5,
+    slidesPerView:2,
     spaceBetween:30,
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+
+    breakpoints: {
+      // when window width is <= 640px
+      780: {
+        slidesPerView: 5,  // Adjust to 1 slide per view on phones
+      },
+    
+    },
 
     
     autoplay: {

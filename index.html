@@ -26,7 +26,7 @@
     </div>
 
     <!-- Button Group -->
-    <div class="flex flex-row items-center gap-x-2 ms-auto py-1 md:ps-6 md:order-3 xl:col-span-3 md:col-span-10 ">
+    <div class="flex flex-row  items-center gap-x-2 ms-auto py-1 md:ps-6 md:order-3 xl:col-span-3 md:col-span-10 ">
       <div class="flex flex-row justify-center items-center gap-2">
 
         <svg width="23px" height="23px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
@@ -43,7 +43,7 @@
           
           </svg>
 
-          <button type="button" class="py-2 px-5 inline-flex  items-center gap-x-2  text-[14px]  text-nowrap  font-medium rounded-md border border-gray-200 text-black hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none">
+          <button type="button" class="py-2 px-5 sm:inline-flex  hidden   items-center gap-x-2  text-[14px]  text-nowrap  font-medium rounded-md border border-gray-200 text-black hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none">
             <svg fill="#322f2f" width="16px" height="16px" viewBox="0 0 56.00 56.00" xmlns="http://www.w3.org/2000/svg" stroke="#322f2f" stroke-width="0.00056" transform="rotate(0)">
 
               <g id="SVGRepo_bgCarrier" stroke-width="0"/>
@@ -60,7 +60,7 @@
           </button>
       </div>
     
-      <button type="button" class="py-2 px-5 w-[104px]  inline-flex items-center gap-x-2 text-nowrap font-medium rounded-md border border-transparent bg-primary-950 text-black hover:bg-lime-500 transition disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:bg-lime-500">
+      <button type="button" class="py-2 px-5 w-[104px]  hidden  sminline-flex items-center gap-x-2 text-nowrap font-medium rounded-md border border-transparent bg-primary-950 text-black hover:bg-lime-500 transition disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:bg-lime-500">
        Buy Now!
       </button>
 
@@ -74,7 +74,7 @@
     <!-- End Button Group -->
 
     <!-- Collapse -->
-    <div id="navbar-collapse-with-animation" class="hs-collapse xl:inline-block hidden  transition-all duration-300 basis-full grow md:w-auto md:basis-auto md:order-2 md:col-span-7 text-base font-inter">
+    <div id="navbar-collapse-with-animation" class="hs-collapse xl:inline-block hidden  transition-all duration-300 basis-full grow md:w-auto md:basis-auto md:order-2 md:col-span-7 text-base font-inter md:bg-none bg-blue-200">
       <div class="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row xl:justify-center xl:items-center xl:gap-y-0 xl:gap-x-[16px] xl:mt-0">
       
         <div class=" flex flex-row justify-center items-center gap-0 font-inter text-base">
@@ -126,7 +126,7 @@
             
             </svg>
         </div>
-        <div class=" flex flex-row justify-center items-center gap-0 font-inter text-base">
+        <!-- <div class=" flex flex-row justify-center items-center gap-0 font-inter text-base">
           <a class="inline-block text-black hover:text-gray-600" href="#">Megamenu  </a>
           <svg width="40px" class="" height="40px" viewBox="-11.52 -11.52 47.04 47.04" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00024000000000000003">
 
@@ -141,7 +141,7 @@
               <a class="inline-block text-black hover:text-gray-600  text-nowrap" href="#">Contact us  </a>
              
         </div>
-      </div>
+      </div> -->
     </div>
     <!-- End Collapse -->
   </nav>
@@ -153,26 +153,26 @@
        <section class="container ">
         <img src="./img/Containerbg1 (1).png" class="absolute top-[00px]  z-10" alt="">
 
-        <main class="grid grid-cols-12  justify-between items-center ">
-          <div class="col-span-7 flex flex-col gap-[24px]">
+        <main class="grid grid-cols-1  md:grid-cols-12  justify-between items-center ">
+          <div class="md:col-span-7 col-span-1 flex flex-col gap-[24px]">
            <div class="font-inter rounded-mdflex flex-row gap-2 bg-slate-100 border-black w-fit px-4 py-1"><span>😎</span><span>Award-winning digital service</span></div>
 
-           <h1 class="font-instrument text-[58px] font-bold" >Creative studio focused on <span id="typeWriter" class="text-primary-950"></span></h1>
+           <h1 class="font-instrument text-[38px] md:text-[58px] font-bold" >Creative studio focused on <span id="typeWriter" class="text-primary-950"></span></h1>
            <h4 class="text-base font-inter">From concept to execution, we deliver web designs that make an impact. Let your brand shine with our innovative and visually stunning websites.</h4>
            <form class=" px-4 rounded-md w-[80%] py-3 flex flex-row text-base font-inter gap-3 bg-slate-200">
             <input required   class="w-[80%]  max-w-[523px] focus:outline-none bg-slate-200  " type="email" placeholder="Enter your email address" >
             <button class="border-2px  text-nowrap border-black border px-4 py-1 text-white bg-slate-800 rounded-md">Buy now</button>
            </form>
            <!-- support + award  -->
-            <div class="flex flex-row justify-between">
-              <div class="flex flex-row justify-center items-center gap-[30px]">
+            <div class="flex md:flex-row flex-col justify-between gap-[16px]">
+              <div class="flex flex-row md:justify-center items-center gap-[30px]">
                 <img src="./img/Figure → SVG.png"  class="w-[50px]" alt="">
                 <div class="flex flex-col gap[10px]">
                   <h2 class="font-instrument font-semibold text-[20px]">24/7 Support</h2>
                   <p>we're always here to help</p>
                 </div>
               </div>
-              <div class="flex flex-row justify-center items-center gap-[30px]">
+              <div class="flex flex-row md:justify-center items-center gap-[30px]">
                 <img class="w-[50px]" src="./img/Figure → SVG (1).png" alt="">
                 <div class="flex flex-col gap[10px]">
                   <h2 class="font-instrument font-semibold text-[20px]">Award-winning</h2>
@@ -186,15 +186,15 @@
           </div>
           <!-- img hero container  -->
          
-          <div class="col-span-5 items-end flex justify-end">
-            <img class="max-w-[641px] max-h-[635px] w-full relative left-24 bottom-4" src="./img/Group 2.png" alt="">
+          <div class="md:col-span-5  items-end flex justify-end">
+            <img class="max-w-[641px] max-h-[635px] w-full relative md:left-24 md:bottom-4" src="./img/Group 2.png" alt="">
 
           </div>
-          <div class="grid grid-cols-12 col-span-12 h-[200px]">
-            <div class="col-span-2">
-              <h2 class="font-instrument font-bold text-[20px] text-wrap w-2/3">100 + companies trust us</h2>
+          <div class="grid md:grid-cols-12 mt-[16px]  grid-cols-1 col-span-1 md:col-span-12  md  h-[200px]">
+            <div class="md:col-span-2">
+              <h2 class="font-instrument font-bold text-[20px] text-wrap w-1/3 md:w-2/3">100 + companies trust us</h2>
             </div>
-            <div class="col-span-10">
+            <div class="md:col-span-10">
               <!-- Slider main container -->
 <div class="swiper h-full w-full  ">
   <!-- Additional required wrapper -->
@@ -227,13 +227,13 @@
      
     </main>
     <!-- experience  -->
-    <main class="container grid grid-cols-12 justify-center items-center mt-[80px]">
+    <main class="container grid grid-cols-1 md:grid-cols-12 justify-center items-center mt-[80px] ">
 
-      <section class="col-span-7 grid grid-cols-7  gap-[20px] overflow-hidden">
-        <img src="./img/first-img.png" class="col-span-3 max-h-[467px] transition-all duration-300 hover:scale-110" alt="">
-        <div class="col-span-4 w-3/4 grid grid-cols-4 gap-[30px] overflow-hidden">
+      <section class="md:col-span-7  md:grid md:grid-cols-7 flex flex-col  gap-[20px] overflow-hidden">
+        <img src="./img/first-img.png" class="col-span-3  max-h-[467px] w-full transition-all duration-300 hover:scale-110" alt="">
+        <div class="md:col-span-4  md:w-3/4 flex flex-col  md:grid md:grid-cols-4 gap-[30px] overflow-hidden ">
 
-          <div class="col-span-2">
+          <div class="md:col-span-2">
             <h2 class="text-[44px]  justify-center flex flex-col py-[16px]  content-center border  border-black text-wrap text-center px-3  font-instrument rounded-md bg-slate-800 text-white">10+ <span class="text-base font-inter"> Years of 
               
              
@@ -242,7 +242,7 @@
              
             </span></h2>
           </div>
-          <div class="col-span-2">
+          <div class="md:col-span-2  ">
             <h2 class="text-[44px] justify-center flex flex-col  content-center border py-[16px]  border-black text-wrap text-center px-3  font-instrument rounded-md bg-primary-950 text-white"><span>1.2K</span> <span class="text-base font-inter "> Happy
               
              
@@ -255,7 +255,7 @@
 
         </div>
       </section>
-      <section class="col-span-5 flex flex-col ">
+      <section class="col-span-5 flex flex-col mt-[26px]">
         <div class="font-inter  rounded-md flex flex-row gap-[8px] justify-center items-center bg-slate-100 border-black w-fit px-4 py-1"> 
 
            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#d54515" viewBox="0 0 256 256"><path d="M230.33,141.06a24.34,24.34,0,0,0-18.61-4.77C230.5,117.33,240,98.48,240,80c0-26.47-21.29-48-47.46-48A47.58,47.58,0,0,0,156,48.75,47.58,47.58,0,0,0,119.46,32C93.29,32,72,53.53,72,80c0,11,3.24,21.69,10.06,33a31.87,31.87,0,0,0-14.75,8.4L44.69,144H16A16,16,0,0,0,0,160v40a16,16,0,0,0,16,16H120a7.93,7.93,0,0,0,1.94-.24l64-16a6.94,6.94,0,0,0,1.19-.4L226,182.82l.44-.2a24.6,24.6,0,0,0,3.93-41.56ZM119.46,48A31.15,31.15,0,0,1,148.6,67a8,8,0,0,0,14.8,0,31.15,31.15,0,0,1,29.14-19C209.59,48,224,62.65,224,80c0,19.51-15.79,41.58-45.66,63.9l-11.09,2.55A28,28,0,0,0,140,112H100.68C92.05,100.36,88,90.12,88,80,88,62.65,102.41,48,119.46,48ZM16,160H40v40H16Zm203.43,8.21-38,16.18L119,200H56V155.31l22.63-22.62A15.86,15.86,0,0,1,89.94,128H140a12,12,0,0,1,0,24H112a8,8,0,0,0,0,16h32a8.32,8.32,0,0,0,1.79-.2l67-15.41.31-.08a8.6,8.6,0,0,1,6.3,15.9Z"></path></svg>      <span>Award-winning digital service</span>
@@ -299,8 +299,8 @@
          <h2 class="text-white mx-auto mt-[30px] text-center text-[44px] font-instrument text-wrap max-w-[686px] ">We specialize in the following services</h2>
 
          <!-- card group  -->
-          <div class="flex flex-col gap-[50px] text-white mt-[50px]">
-            <section class="grid grid-cols-4 gap-[22px]">
+          <div class="flex flex-col gap-[50px] text-white mt-[50px] pb-[16px]">
+            <section class="grid md:grid-cols-4 md:gap-[22px] gap-[50px]">
               <div class="bg-primary-750 px-4 min-h-[230px] py-2 rounded-md content-center">
                 <img src="./img/Group 6eee.png" class="size-[60px] relative bottom-10" alt="">
                 <h1 class="text-[24px] font-instrument font-semibold">Digital Marketing</h1>
@@ -341,7 +341,7 @@
               </div>
 
             </section>
-            <section class="grid grid-cols-4 gap-[22px]">
+            <section class="grid md:grid-cols-4  md:gap-[22px] gap-[50px]">
               <div class="bg-primary-750 px-4 min-h-[230px] py-2 rounded-md content-center">
                 <img src="./img/Group 655.png" class="size-[60px] relative bottom-10" alt="">
                 <h1 class="text-[24px] font-instrument font-semibold">Business Strategy</h1>
@@ -405,9 +405,9 @@
 
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ec1818" viewBox="0 0 256 256"><path d="M223.85,47.12a16,16,0,0,0-15-15c-12.58-.75-44.73.4-71.41,27.07L132.69,64H74.36A15.91,15.91,0,0,0,63,68.68L28.7,103a16,16,0,0,0,9.07,27.16l38.47,5.37,44.21,44.21,5.37,38.49a15.94,15.94,0,0,0,10.78,12.92,16.11,16.11,0,0,0,5.1.83A15.91,15.91,0,0,0,153,227.3L187.32,193A15.91,15.91,0,0,0,192,181.64V123.31l4.77-4.77C223.45,91.86,224.6,59.71,223.85,47.12ZM74.36,80h42.33L77.16,119.52,40,114.34Zm74.41-9.45a76.65,76.65,0,0,1,59.11-22.47,76.46,76.46,0,0,1-22.42,59.16L128,164.68,91.32,128ZM176,181.64,141.67,216l-5.19-37.17L176,139.31Zm-74.16,9.5C97.34,201,82.29,224,40,224a8,8,0,0,1-8-8c0-42.29,23-57.34,32.86-61.85a8,8,0,0,1,6.64,14.56c-6.43,2.93-20.62,12.36-23.12,38.91,26.55-2.5,36-16.69,38.91-23.12a8,8,0,1,1,14.56,6.64Z"></path></svg>    <span>Award-winning digital service</span>
              </div>
-             <h2 class="font-instrument text-[44px] font-bold text-center">Get a plan that grows with you</h2>
+             <h2 class="font-instrument md:text-[44px]  text-[42px] font-bold text-center">Get a plan that grows with you</h2>
 
-             <div class="grid grid-cols-3 gap-8">
+             <div class="grid md:grid-cols-3 gap-8">
 
               <div class="border-r-2  border-slate-100 flex flex-col gap-[16px]">
                 <img src="./img/SVG (3).png" class="w-[126px]" alt="">
@@ -485,7 +485,8 @@
              
               </div>
 
-              <div class="border border-black  rounded-md px-[16px] py-[16px] bg-primary-950 flex flex-col justify-between"> 
+              <div class=" border-black min-h-[456px]  rounded-md px-[16px] py-[16px] bg-primary-950 flex flex-col justify-between bg-[url('./img/decoration-pattern.svg.png')] bg-no-repeat bg-right-top"> 
+               
                 <section class="space-y-[16px]">
                   <button class="border border-black px-4 py-1 bg-black text-white">Enterprise</button>
                   <h2 class="text-[32px] font-instrument font-bold text-white">Custom pricing plan</h2>
@@ -494,7 +495,7 @@
 
                 <section class="space-y-[16px]">
 
-                  <button class="border w-full py-1 bg-white rounded-md hover:scale-110 duration-300">Contact Sales</button>
+                  <button class="border w-full py-4 md:py-1 bg-white rounded-md hover:scale-110 duration-300">Contact Sales</button>
                   <h2 class="text-white text-center">Get personalized demo and custom plan
                   </h2>
                 </section>
@@ -507,11 +508,11 @@
 
           </section>
 
-          <section class="mt-[120px] container grid grid-cols-2 " >
+          <section class="mt-[120px] flex flex-col gap-[16px] container md:grid md:grid-cols-2 " >
             <div class=" flex flex-col gap-[26px]">
-              <div class="font-inter mx-auto  rounded-md flex flex-row gap-[8px] justify-center items-center bg-slate-800 text-white border-black w-fit px-4 py-1"> 
+              <div class="font-inter mx-auto  rounded-md flex flex-row gap-[8px] justify-center items-center bg-slate-300 text-white border-black w-fit px-4 py-1"> 
 
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ec1818" viewBox="0 0 256 256"><path d="M223.85,47.12a16,16,0,0,0-15-15c-12.58-.75-44.73.4-71.41,27.07L132.69,64H74.36A15.91,15.91,0,0,0,63,68.68L28.7,103a16,16,0,0,0,9.07,27.16l38.47,5.37,44.21,44.21,5.37,38.49a15.94,15.94,0,0,0,10.78,12.92,16.11,16.11,0,0,0,5.1.83A15.91,15.91,0,0,0,153,227.3L187.32,193A15.91,15.91,0,0,0,192,181.64V123.31l4.77-4.77C223.45,91.86,224.6,59.71,223.85,47.12ZM74.36,80h42.33L77.16,119.52,40,114.34Zm74.41-9.45a76.65,76.65,0,0,1,59.11-22.47,76.46,76.46,0,0,1-22.42,59.16L128,164.68,91.32,128ZM176,181.64,141.67,216l-5.19-37.17L176,139.31Zm-74.16,9.5C97.34,201,82.29,224,40,224a8,8,0,0,1-8-8c0-42.29,23-57.34,32.86-61.85a8,8,0,0,1,6.64,14.56c-6.43,2.93-20.62,12.36-23.12,38.91,26.55-2.5,36-16.69,38.91-23.12a8,8,0,1,1,14.56,6.64Z"></path></svg>    <span>Award-winning digital service</span>
+             <span>💖</span><span>Real results from real clients</span>
                </div>
                <h2 class="text-[44px] font-instrument font-bold leading-[50px]  ">See how we've helped our clients succeed</h2>
 
@@ -603,15 +604,15 @@
               
             </div>
 
-            <img src="./img/Group 11.png" class="w-full" alt="">
+            <img src="./img/Group 11.png" class="w-full " alt="">
             
 
 
           </section>
 
-          <section class="mt-[120px] container grid grid-cols-3 gap-[80px] bg-primary-950 px-[20px] py-[20px] justify-center items-center h-[272px] relative top-[26px]" >
+          <section class="mt-[120px] container flex flex-col md:grid md:grid-cols-3 gap-[80px] bg-primary-950 px-[20px] py-[20px] justify-center h-fit m-[15px] items-center md:h-[272px] z-40 relative top-[80px] md:top-[26px]" >
          
-            <div class="col-span-2 space-y-[27px] ">
+            <div class="md:col-span-2 space-y-[27px]  h-fit">
               <h2 class="text-[40px] max-w-[628px] leading-[50px] font-instrument text-white font-bold">Let's talk about your digital agency goals</h2>
 
               <form action="" class="flex flex-row gap-[16px] border border-solid bg-white px-6 py-2 justify-between w-3/4 rounded-md">
@@ -619,12 +620,12 @@
                 <button class=" px-4 py-1 bg-black text-white"> Subscribe</button>
               </form>
             </div>
-            <div class=" px-2 space-y-[16px]">
+            <div class=" px-2 space-y-[16px] h-[200px]">
              <span class="flex flex-row gap-[16px]"><img class="w-[16px]" src="./img/headphone-part-2-svgrepo-com.svg" alt="">   <p class="text-base text-white">Call on:012657489754 </p></span> 
 
              <span class="flex flex-row gap-[16px]"><img class="w-[16px]" src="./img/clock-circle-svgrepo-com.svg" alt="">   <p class="text-base text-white">Time: 9am to 5pm (Sunday close) </p></span> 
              <span class="flex flex-row gap-[16px]"><img class="w-[16px]" src="./img/email-download-svgrepo-com.svg" alt="">   <p class="text-base text-white">Email:example@gmail.com </p></span> 
-             <img src="./img/SVG (4).png" class="relative bottom-20" alt="">
+             <img src="./img/SVG (4).png" class="relative bottom-20 " alt="">
               
 
 
@@ -633,12 +634,12 @@
 
           </section>
 
-          <section class="bg-primary-850 text-white w-full pt-[80px] content-center items-center  ">
+          <section class="bg-primary-850  text-white w-full pt-[80px] content-center items-center  ">
 
             <img src="./img/Containerbg1 (1).png" class="absolute  z-10" alt="">
-            <main class="container  grid grid-cols-4 gap-[26px]  mx-auto">
+            <main class="container  grid grid-cols-2 md:grid-cols-4 gap-[26px]  mx-auto">
 
-              <div class="  flex flex-col gap-[16px]   ">
+              <div class="  flex flex-col gap-[16px] col-span-2 md:col-span-1  ">
                 <img src="./img/logo.svg fill.png" alt="" class="text-white w-[136px]">
                 <h2 class="text-base font-inter">A Bootstrap theme that's both stylish and functional, perfect for any type of technology or corporate website.
                 </h2>
@@ -703,7 +704,7 @@
 
 
             </main>
-            <div class="flex flex-row justify-between items-center container pt-[26px] border-t-2 border-primary-750 mt-[26px] mb-[26px]">
+            <div class="flex md:flex-row gap-[16px] flex-col justify-between items-center container pt-[26px] border-t-2 border-primary-750 mt-[26px] mb-[26px]">
               <p class="text-base font-inter text-primary-750">Copyrights ©2024 Mizzle. Build by Webestica .</p>
              
 
