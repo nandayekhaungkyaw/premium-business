@@ -1,6 +1,7 @@
 import './style.css'
 import './node_modules/preline/dist/preline.js'
 
+
 // import Swiper bundle with all modules installed
 import Swiper from 'swiper/bundle';
 
@@ -102,3 +103,22 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
+
+  const light=document.querySelector('#light')
+const dark=document.querySelector('#dark')
+const body=document.querySelector('#body')
+const html=document.querySelector('#html')
+
+
+
+light.addEventListener('click',()=>{
+  body.classList.remove('dark:bg-black','dark:text-white','bg-slate-900')
+  body.classList.add('bg-white')
+  html.classList.remove('dark')
+})
+
+dark.addEventListener('click',()=>{
+  html.classList.add('dark')
+  body.classList.add('dark:bg-black','dark:text-white','bg-slate-900')
+  body.classList.remove('bg-white')
+})
