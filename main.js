@@ -29,6 +29,7 @@ const swiper2 = new Swiper('.swiper2', {
       780: {
         slidesPerView: 2,  // Adjust to 1 slide per view on phones
       },
+      
       autoplay: {
         delay: 1000,
         disableOnInteraction: false,
@@ -65,6 +66,9 @@ const swiper = new Swiper('.swiper', {
     breakpoints: {
       // when window width is <= 640px
       780: {
+        slidesPerView: 3,  // Adjust to 1 slide per view on phones
+      },
+      1024: {
         slidesPerView: 5,  // Adjust to 1 slide per view on phones
       },
     
